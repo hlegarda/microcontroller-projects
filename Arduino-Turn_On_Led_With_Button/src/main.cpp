@@ -6,22 +6,20 @@ const int buttonPin = 7; // Pin number for the push button
 int value = 0; // Variable to store the analog value
 
 void setup() {
-    pinMode(ledPin, OUTPUT); // Set the LED pin as an output
-    pinMode(buttonPin, INPUT); // Set the button pin as an input
-    Serial.begin(9600); // Start serial communication at 9600 baud rate
-}
+    pinMode(ledPin, OUTPUT);
+    pinMode(buttonPin, INPUT);
+    Serial.begin(9600);
 
 void loop() {
-  value = digitalRead(buttonPin); // Read the state of the button
-  if (value == HIGH)
+  value = digitalRead(buttonPin);
   {
-    digitalWrite(ledPin, HIGH); // Turn the LED on
+    digitalWrite(ledPin, HIGH);
     Serial.println("Button Pressed - LED ON");
-    delay(6000); // Wait for half a second
+    delay(6000);
   }
   else
   {
-    digitalWrite(ledPin, LOW); // Turn the LED off
+    digitalWrite(ledPin, LOW);
     Serial.println("Button Released - LED OFF");
   }
 }

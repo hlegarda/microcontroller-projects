@@ -1,6 +1,6 @@
 #include <Arduino.h>
 
-void amazingLightShow();
+void incredibleKit();
 
 int redLed1 = 5;
 int redLed2 = 6;
@@ -19,16 +19,13 @@ void setup() {
   pinMode(buttonPin, INPUT);
 }
 
-
-
 void loop() {
   if (digitalRead(buttonPin) == HIGH) {
-    amazingLightShow();
+    incredibleKit();
   }
 }
 
-
-void amazingLightShow() {
+void incredibleKit() {
   digitalWrite(redLed1, HIGH);
   delay(delayTime);
   digitalWrite(redLed1, LOW);

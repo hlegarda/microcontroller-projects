@@ -3,6 +3,7 @@
 int red = 5;
 int yellow = 6;
 int green = 7;
+int lightDuration = 6000;
 
 void setup() {
   pinMode(red, OUTPUT);
@@ -12,14 +13,14 @@ void setup() {
 
 void loop() {
   digitalWrite(green, HIGH);
-  delay(6000);
+  delay(lightDuration);
   digitalWrite(green, LOW);
   
   digitalWrite(yellow, HIGH);
-  delay(6000);
+  delay(lightDuration);
   digitalWrite(yellow, LOW);
   
   digitalWrite(red, HIGH);
-  delay(6000);
+  delay(lightDuration);
   digitalWrite(red, LOW);
 }

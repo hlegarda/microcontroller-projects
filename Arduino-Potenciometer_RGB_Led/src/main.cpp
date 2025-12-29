@@ -4,9 +4,9 @@ int red = 3;
 int blue = 5;
 int green = 6;
 
-int poteciometerPin1 = A0;
-int poteciometerPin2 = A1;
-int poteciometerPin3 = A2;
+int potenciometerPin1 = A0;
+int potenciometerPin2 = A1;
+int potenciometerPin3 = A2;
 
 int intensity1 = 0;
 int intensity2 = 0; 
@@ -16,16 +16,16 @@ void setup() {
   pinMode(red, OUTPUT);
   pinMode(blue, OUTPUT);
   pinMode(green, OUTPUT);
-  pinMode(poteciometerPin1, INPUT);
-  pinMode(poteciometerPin2, INPUT); 
-  pinMode(poteciometerPin3, INPUT);
+  pinMode(potenciometerPin1, INPUT);
+  pinMode(potenciometerPin2, INPUT); 
+  pinMode(potenciometerPin3, INPUT);
   Serial.begin(9600);
 }
 
 void loop() {
-  intensity1 = analogRead(poteciometerPin1) / 4;
-  intensity2 = analogRead(poteciometerPin2) / 4;
-  intensity3 = analogRead(poteciometerPin3) / 4;
+  intensity1 = analogRead(potenciometerPin1) / 4;
+  intensity2 = analogRead(potenciometerPin2) / 4;
+  intensity3 = analogRead(potenciometerPin3) / 4;
 
   analogWrite(red, intensity1);
   analogWrite(blue, intensity2);

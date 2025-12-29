@@ -9,7 +9,7 @@ int speed;
 void setup() {
   pinMode(motor, OUTPUT);
   pinMode(potentiometer, INPUT);
-  Serial.begin(9800);
+  Serial.begin(9600);
 }
 
 void loop() {

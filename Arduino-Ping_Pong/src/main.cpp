@@ -5,13 +5,12 @@ int time = 400;
 int speedUp = 10;
 int minLedPin = 2;
 int maxLedPin = 8;
-int initialScore = 2;
+int initialScore = 5;
 
-// Player pins
+// Player button pins
 int playerOne = 13;
 int playerTwo = 12;
 
-// 
 int playerOneStatus = 0;
 int playerTwoStatus = 0;
 
@@ -104,7 +103,6 @@ void playerTwoTurn()
   time = time - speedUp;
 }
 
-
 void resetGame()
 {
     for (size_t i = 0; i < 4; i++)
@@ -127,6 +125,6 @@ void resetGame()
       delay(400);
     }
     time = 400;
-    playerOneScore = 2;
-    playerTwoScore = 2;
+    playerOneScore = initialScore;
+    playerTwoScore = initialScore;
 }

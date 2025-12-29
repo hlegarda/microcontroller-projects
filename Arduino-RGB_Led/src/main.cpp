@@ -1,6 +1,5 @@
 #include <Arduino.h>
 
-
 int red = 7;
 int green = 6;
 int blue = 5;             
@@ -29,5 +28,4 @@ void loop() {
   digitalWrite(blue, LOW);
 
   delay(1000);
-
 }
