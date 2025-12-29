@@ -1,0 +1,111 @@
+# Recommended .gitignore for VS Code + PlatformIO projects
+
+### PlatformIO / build artifacts
+.pio/
+.pioenvs/
+.pio/build/
+/.platformio
+libdeps/
+build/
+*.elf
+*.bin
+*.hex
+*.map
+*.a
+*.o
+
+### PlatformIO project files (local environment)
+platformio.ini.user
+
+### VS Code
+.vscode/
+
+### OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+### Python
+venv/
+.venv/
+.env
+__pycache__/
+*.pyc
+
+### JetBrains
+.idea/
+
+### Node
+node_modules/
+
+### Logs, caches, temp
+*.log
+*.tmp
+*.cache
+
+### Secrets / env
+.env.local
+.credentials
+
+# Ignore build artifacts in any nested project folders
+**/.pio/
+**/.pioenvs/
+**/libdeps/
+
+# End of file
++ # Recommended .gitignore for VS Code + PlatformIO projects
++ 
++ ### PlatformIO / build artifacts
++ .pio/
++ .pioenvs/
++ .pio/build/
++ /.platformio
++ libdeps/
++ build/
++ *.elf
++ *.bin
++ *.hex
++ *.map
++ *.a
++ *.o
++ 
++ ### PlatformIO project files (local environment)
++ platformio.ini.user
++ 
++ ### VS Code
++ .vscode/
++ 
++ ### OS files
++ .DS_Store
++ Thumbs.db
++ desktop.ini
++ 
++ ### Python
++ venv/
++ .venv/
++ .env
++ __pycache__/
++ *.pyc
++ 
++ ### JetBrains
++ .idea/
++ 
++ ### Node
++ node_modules/
++ 
++ ### Logs, caches, temp
++ *.log
++ *.tmp
++ *.cache
++ 
++ ### Secrets / env
++ .env.local
++ .credentials
++ 
++ # Ignore build artifacts in any nested project folders
++ **/.pio/
++ **/.pioenvs/
++ **/libdeps/
++ 
++ # End of file
++ 
